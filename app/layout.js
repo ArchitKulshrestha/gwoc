@@ -1,8 +1,6 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Footer, Navbar } from "./components";
 
 export const metadata = {
   title: "Tarang Sir",
@@ -12,11 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning={true} lang="en">
-      <body className={`${inter.className} bg-background-50`}>
+      <body className={`  bg-background-50 `}>
         <Navbar />
-        <main className="relative overflow-hidden top-[100px] max-w-[1440px] px-6 lg:px-20 ">
-          {children}
-        </main>
+        <main className="relative overflow-hidden   ">{children}</main>
       </body>
     </html>
   );

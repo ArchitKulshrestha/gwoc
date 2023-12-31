@@ -1,7 +1,11 @@
 import React from "react";
 
 const Hero = () => {
-  return <div className="h-screen">Hero</div>;
+  return (
+    <div id="Home" className=" mt-[70px]">
+      Hero
+    </div>
+  );
 };
 
 export default Hero;

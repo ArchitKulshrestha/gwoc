@@ -7,6 +7,7 @@ import Achievements from "./Achievements";
 import Demo from "./Demo";
 import Skills from "./Skills";
 import Testimonials from "./Testimonials";
+import Navbar from "./Navbar";
 export {
   Footer,
   Hero,
@@ -16,4 +17,5 @@ export {
   Demo,
   Skills,
   Testimonials,
+  Navbar,
 };

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import {
-  Footer,
   Hero,
   About,
   Contact,
@@ -8,12 +7,15 @@ import {
   Demo,
   Skills,
   Testimonials,
+  Footer,
 } from "./components/index";
 export default function Home() {
   return (
     <>
       <Hero />
+
       <About />
+
       <Skills />
       <Achievements />
       <Testimonials />
