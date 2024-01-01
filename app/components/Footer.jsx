@@ -34,16 +34,18 @@ const Footer = () => {
           Socials
         </h1>
         <div className="mt-1 text-text-600 text-3xl font-bold">
-          <Link href="https://www.instagram.com/">
+          <Link
+            target="_blank"
+            href="https://www.instagram.com/tarangbombale?igsh=YzVkODRmOTdmMw%3D%3D">
             <AiOutlineInstagram className="inline-block mr-3 hover:scale-105 transition-all duration-200 hover:text-text-800" />
           </Link>
-          <Link href="https://www.linkedin.com/">
+          <Link target="_blank " href="https://www.linkedin.com/">
             <AiOutlineLinkedin className="inline-block mr-3 hover:scale-105 transition-all duration-200 hover:text-text-800" />
           </Link>
-          <Link href="https://www.youtube.com/">
+          <Link target="_blank " href="https://www.youtube.com/">
             <AiOutlineYoutube className="inline-block mr-3 hover:scale-105 transition-all duration-200 hover:text-text-800" />
           </Link>
-          <Link href="https://www.gmail.com/">
+          <Link target="_blank " href="https://www.gmail.com/">
             <AiOutlineMail className="inline-block mr-3 hover:scale-105 transition-all duration-200 hover:text-text-800" />
           </Link>
         </div>

@@ -4,7 +4,7 @@ import { useState } from "react";
 import { NavLinks } from "@/constants";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+
 import { HiMenuAlt1 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 const Navbar = () => {
@@ -12,10 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
 
   return (
-    <motion.nav
-      className="fixed px-6 lg:px-20 z-50 backdrop-blur-[2px]  bg-background-100/60 w-full h-[70px] flex justify-between items-center border-b-2 border-background-100 shadow-md"
-      initial={{ y: -100 }}
-      animate={{ y: 0, transition: { duration: 0.2 } }}>
+    <nav className="fixed px-6 lg:px-20 z-50 backdrop-blur-[8px]  bg-background-100/60 w-full h-[70px] flex justify-between items-center border-b-2 border-background-100 shadow-md">
       <Link href={"/"} className="text-text-700 text-xl font-bold uppercase ">
         <p className="hover:scale-105 transition-all duration-[300ms]">
           Tarang &nbsp;
@@ -64,7 +61,7 @@ const Navbar = () => {
           </ul>
         </div>
       )}
-    </motion.nav>
+    </nav>
   );
 };
 
