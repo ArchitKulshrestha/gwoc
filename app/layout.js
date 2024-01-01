@@ -9,9 +9,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html suppressHydrationWarning={true} lang="en">
-      <body className={`  bg-background-50 `}>
-        <Navbar />
+    <html lang="en">
+      <body suppressHydrationWarning={true} className={`  bg-background-50 `}>
         <main className="relative overflow-hidden   ">{children}</main>
       </body>
     </html>

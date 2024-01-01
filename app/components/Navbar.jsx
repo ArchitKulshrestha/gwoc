@@ -12,7 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
 
   return (
-    <nav className="fixed px-6 lg:px-20 z-50 backdrop-blur-[8px]  bg-background-100/60 w-full h-[70px] flex justify-between items-center border-b-2 border-background-100 shadow-md">
+    <nav className="fixed px-6 lg:px-28 z-50 backdrop-blur-[8px]  bg-background-100/60 w-full h-[70px] flex justify-between items-center border-b-2 border-background-100 shadow-md">
       <Link href={"/"} className="text-text-700 text-xl font-bold uppercase ">
         <p className="hover:scale-105 transition-all duration-[300ms]">
           Tarang &nbsp;

@@ -8,19 +8,18 @@ import {
   Skills,
   Testimonials,
   Footer,
+  Navbar,
 } from "./components/index";
 export default function Home() {
   return (
     <>
+      <Navbar />
       <Hero />
-
       <About />
-
       <Skills />
       <Achievements />
       <Demo />
       <Testimonials />
-
       <Contact />
       <Footer />
     </>

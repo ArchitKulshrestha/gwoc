@@ -1,18 +1,18 @@
-const project = {
-  name: "project",
-  title: "Projects",
+const DemoLecture = {
+  name: "DemoLecture",
+  title: "Demo Lecture",
   type: "document",
   fields: [
     {
-      name: "name",
-      title: "Name",
+      name: "title",
+      title: "Title",
       type: "string",
     },
     {
       name: "slug",
       title: "Slug",
       type: "slug",
-      options: { source: "name" },
+      options: { source: "title" },
     },
     {
       name: "image",
@@ -28,17 +28,17 @@ const project = {
       ],
     },
     {
-      name: "url",
-      title: "URL",
+      name: "link",
+      title: "Link",
       type: "url",
     },
     {
-      name: "content",
-      title: "Content",
+      name: "description",
+      title: "Description",
       type: "array",
       of: [{ type: "block" }],
     },
   ],
 };
 
-export default project;
+export default DemoLecture;

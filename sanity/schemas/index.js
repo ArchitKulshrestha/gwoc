@@ -1,5 +1,6 @@
-import project from "../project-schema";
+import DemoLecture from "../DemoLecture";
+import DemoNotes from "../DemoNotes";
 
-const schemas = [project];
+const schemas = [DemoLecture, DemoNotes];
 
 export default schemas;
