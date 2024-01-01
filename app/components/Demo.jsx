@@ -10,9 +10,11 @@ const Demo = () => {
       id="Demo"
       className="px-6 lg:px-28 min-h-screen flex justify-center items-center py-8">
       <div className="w-full">
-        <h1 className="md:text-3xl text-2xl font-bold text-text-800 ">Demo.</h1>
-        <div className=" py-4 md:py-8">
-          <h2 className="text-text-600 text-lg sm:text-xl font-semibold">
+        <h1 className="md:text-4xl text-2xl font-bold text-text-800 mt-8 ">
+          Demo.
+        </h1>
+        <div className=" py-4 md:py-6">
+          <h2 className="text-text-600 text-xl sm:text-2xl font-semibold">
             Lectures
           </h2>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
@@ -22,7 +24,7 @@ const Demo = () => {
           </div>
         </div>
         <div className="py-4 md:py-8">
-          <h2 className="text-text-600 text-lg sm:text-xl font-semibold">
+          <h2 className="text-text-600 text-xl sm:text-2xl font-semibold">
             Notes
           </h2>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">

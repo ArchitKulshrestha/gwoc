@@ -12,7 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
 
   return (
-    <nav className="fixed px-6 lg:px-28 z-50 backdrop-blur-[8px]  bg-background-100/60 w-full h-[70px] flex justify-between items-center border-b-2 border-background-100 shadow-md">
+    <nav className="fixed px-6 lg:px-28 z-50 backdrop-blur-[8px]  bg-background-100/60 w-full h-[70px] flex justify-between items-center shadow-md">
       <Link href={"/"} className="text-text-700 text-xl font-bold uppercase ">
         <p className="hover:scale-105 transition-all duration-[300ms]">
           Tarang &nbsp;
@@ -25,6 +25,7 @@ const Navbar = () => {
             className="  text-text-700 hover:text-text-800 hover:scale-105 transition-all duration-200 ease-in-out"
             key={link.title}>
             <Link
+              scroll={true}
               onClick={() => setActive(link.title)}
               className={`${
                 active === link.title ? "text-text-900 font-semibold " : ""
@@ -49,7 +50,7 @@ const Navbar = () => {
                 className=" hover:scale-105 text-text-700 hover:text-text-800"
                 key={link.title}>
                 <Link
-                  scroll={false}
+                  scroll={true}
                   className={`${
                     active === link.title ? "text-text-900 font-semibold" : ""
                   } text-base font-normal uppercase hover:font-semibold transition-all duration-200 ease-in-out`}

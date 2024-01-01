@@ -5,6 +5,8 @@ import {
   rank,
   testTube,
   pass,
+  experience,
+  experiencePhysics,
 } from "@/public/assets";
 
 export const NavLinks = [
@@ -90,21 +92,34 @@ export const Lectures = [
 
 export const Notes = [
   {
-    image: pass,
-    title: "NextJS",
-    description: "Learn NextJS from scratch",
+    image: experiencePhysics,
+    title: "Vectors",
+    description: "Learn Vectors ",
     link: "https://drive.google.com/file/d/1rtZ0JMmBW7ea0kbhq12wrO4dvAqNBiZw/view?usp=drive_link",
   },
   {
-    image: pass,
-    title: "ReactJS",
-    description: "Learn ReactJS from scratch",
+    image: experiencePhysics,
+    title: "Newton's Laws of Motion",
+    description: "Learn Newton's Laws of Motion",
     link: "https://drive.google.com/file/d/1uWKhW17XSoBmcEDCfNonBEMHj-MuPMvR/view?usp=drive_link",
   },
   {
-    image: pass,
-    title: "NodeJS",
-    description: "Learn NodeJS from scratch",
+    image: experiencePhysics,
+    title: "Work Power Energy",
+    description: "Learn Work Power Energy",
     link: "https://drive.google.com/file/d/1IaYEoUeP-B4PHEq5IKom7e_OYwBg-R7j/view?usp=drive_link",
+  },
+];
+export const Experience = [
+  {
+    icon: experiencePhysics,
+    description: "Online Physics Tutor",
+    duration: "Sep'22 - Present",
+  },
+
+  {
+    icon: experience,
+    description: "IIT Gurukul , Surat",
+    duration: "Nov'20 - May'23",
   },
 ];
