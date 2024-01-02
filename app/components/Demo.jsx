@@ -1,10 +1,15 @@
-import { Lectures, Notes } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 import { NotesCard } from "./NotesCard";
 import { LectureCard } from "./LectureCard";
+import { getLectures, getNotes } from "@/sanity/utilsSanity";
 
-const Demo = () => {
+export const dynamic = "force-dynamic";
+export const revalidate = 120;
+
+const Demo = async () => {
+  const Lectures = await getLectures();
+  const Notes = await getNotes();
   return (
     <section
       id="Demo"
@@ -28,8 +33,8 @@ const Demo = () => {
             Notes
           </h2>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
-            {Notes.map((lecture, index) => (
-              <NotesCard key={index} index={index} {...lecture} />
+            {Notes.map((Note, index) => (
+              <NotesCard key={index} index={index} {...Note} />
             ))}
           </div>
         </div>

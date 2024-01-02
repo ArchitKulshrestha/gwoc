@@ -10,7 +10,7 @@ const config = defineConfig({
   basePath: "/admin",
   title: "gwoc-portfolio",
   plugins: [deskTool(), visionTool()],
-  useCDN: true,
+
   schema: {
     types: schemas,
   },

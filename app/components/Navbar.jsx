@@ -42,12 +42,12 @@ const Navbar = () => {
         {showMenu ? <IoMdClose /> : <HiMenuAlt1 />}
       </div>
       {showMenu && (
-        <div className="absolute top-[70px] left-0 w-full backdrop-blur-[2px]  bg-background-50/80  flex flex-col p-5 items-center md:hidden z-50">
+        <div className="absolute top-[70px] left-0 w-full backdrop-blur-[6px]  bg-background-100/60  flex flex-col h-screen p-5 items-center md:hidden z-50">
           <ul className="flex flex-col gap-8 items-center">
             {NavLinks.map((link) => (
               <li
                 onClick={() => setActive(link.title)}
-                className=" hover:scale-105 text-text-700 hover:text-text-800"
+                className=" hover:scale-105 text-text-700 hover:text-text-800 transition-all duration-200 "
                 key={link.title}>
                 <Link
                   scroll={true}

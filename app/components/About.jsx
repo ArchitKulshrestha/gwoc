@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
       <section id="About" className="px-6 lg:px-28 min-h-screen  py-8">
-        <div className=" flex flex-col md:flex-row gap-6">
+        <div className=" flex flex-col md:flex-row gap-x-8 gap-y-12">
           <div className=" w-full md:w-1/2">
             <h1 className="md:text-4xl text-2xl font-bold text-text-800 pb-2">
               About.
@@ -40,7 +40,7 @@ const About = () => {
           <h1 className="md:text-4xl text-2xl font-bold text-text-800 my-8 ">
             Work Experience.
           </h1>
-          <div className="flex flex-col md:flex-row w-full md:w-1/2">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
             {Experience.map((item, index) => (
               <Workexperience key={index} {...item} />
             ))}

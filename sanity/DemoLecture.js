@@ -35,8 +35,7 @@ const DemoLecture = {
     {
       name: "description",
       title: "Description",
-      type: "array",
-      of: [{ type: "block" }],
+      type: "string",
     },
   ],
 };

@@ -72,20 +72,20 @@ export const Achievements = [
 export const Lectures = [
   {
     image: rank,
-    title: "NextJS",
-    description: "Learn NextJS from scratch",
+    title: "Vectors",
+    description: "Learn vectors from scratch",
     link: "https://drive.google.com/file/d/1brqJvLN8qDrnF_CdD3xjlmqrAYn2HJOw/view?usp=drivesdk",
   },
   {
     image: rank,
-    title: "ReactJS",
-    description: "Learn ReactJS from scratch",
+    title: "SHM and Waves",
+    description: "Learn SHM and waves from scratch",
     link: "https://drive.google.com/file/d/1CllCXkANZjL0-ImXGVLKkYGwDwX6n3pp/view?usp=drivesdk",
   },
   {
     image: rank,
-    title: "NodeJS",
-    description: "Learn NodeJS from scratch",
+    title: "Optics ",
+    description: "Learn optics  from scratch",
     link: "https://drive.google.com/file/d/1fpasEEE4OZNxT7r-G0yTSntFyDk1XDZo/view?usp=drivesdk",
   },
 ];
@@ -93,7 +93,7 @@ export const Lectures = [
 export const Notes = [
   {
     image: experiencePhysics,
-    title: "Vectors",
+    title: "Modern Physics",
     description: "Learn Vectors ",
     link: "https://drive.google.com/file/d/1rtZ0JMmBW7ea0kbhq12wrO4dvAqNBiZw/view?usp=drive_link",
   },

@@ -19,6 +19,13 @@ const DemoNotes = {
       title: "Image",
       type: "image",
       options: { hotspot: true },
+      fields: [
+        {
+          name: "alt",
+          title: "Alt",
+          type: "string",
+        },
+      ],
     },
     {
       name: "link",
@@ -28,8 +35,7 @@ const DemoNotes = {
     {
       name: "description",
       title: "Description",
-      type: "array",
-      of: [{ type: "block" }],
+      type: "string",
     },
   ],
 };
