@@ -4,7 +4,7 @@ import { Experience } from "@/constants";
 // import { Workexperience } from "./Workexperience";
 import { about } from "@/public/assets";
 import Image from "next/image";
-import { Workexperience } from "./Workexperience";
+import Workexperience from "./Workexperience";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "@/hoc";
@@ -13,12 +13,12 @@ import { fadeIn, textVariant } from "@/utils/motion";
 const About = () => {
   return (
     <>
-      <section id="About" className="px-6 lg:px-28 min-h-screen  py-8">
+      <section id="About" className="px-6 lg:px-28 min-h-screen  py-8 sm:py-10">
         <div className=" flex flex-col md:flex-row gap-x-8 gap-y-12">
           <motion.div
             className=" w-full md:w-1/2"
             variants={fadeIn("right", "tween", 0.2, 0.4)}>
-            <h1 className="md:text-4xl text-2xl font-bold text-text-800 pb-2">
+            <h1 className="md:text-4xl text-2xl font-bold text-text-800 pb-2 py-2 sm:py-8">
               About.
             </h1>
             <motion.p

@@ -23,7 +23,7 @@ const WorkexperienceCard = ({ title, imageUrl, description, duration }) => {
   );
 };
 
-export const Workexperience = async () => {
+const Workexperience = async () => {
   const Experience = await getExperience();
 
   return (
@@ -39,3 +39,4 @@ export const Workexperience = async () => {
     </div>
   );
 };
+export default Workexperience;
