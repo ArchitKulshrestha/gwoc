@@ -1,5 +1,7 @@
 import { createClient, groq } from "next-sanity";
 
+export const revalidate = 3600;
+
 const client = createClient({
   projectId: "hu7026f3",
   dataset: "production",
@@ -27,6 +29,22 @@ const NotesQuery = groq` *[_type == "DemoNotes"] {
 
 export async function getNotes() {
   return client.fetch(NotesQuery, {
+    cache: "no-store",
+  });
+}
+
+const ExperienceQuery = groq`
+*[_type == "workExperience"] {
+  title,
+  description,
+  duration,
+  "imageUrl": image.asset->url,
+  
+}
+`;
+
+export async function getExperience() {
+  return client.fetch(ExperienceQuery, {
     cache: "no-store",
   });
 }

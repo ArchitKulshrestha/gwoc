@@ -67,4 +67,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-// text-base font-normal uppercase hover:font-semibold transition-all duration-200 ease-in-out

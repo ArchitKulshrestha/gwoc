@@ -5,8 +5,12 @@ import { Footer, Navbar } from "./components";
 export const metadata = {
   title: "Tarang Sir",
   description: "Portfolio of Tarang Sir created for GWOC",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
+export const revalidate = 3600;
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

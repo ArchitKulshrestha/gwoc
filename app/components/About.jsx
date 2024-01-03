@@ -46,16 +46,7 @@ const About = () => {
             />
           </motion.div>
         </div>
-        <div>
-          <h1 className="md:text-4xl text-2xl font-bold text-text-800 my-8 ">
-            Work Experience.
-          </h1>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
-            {Experience.map((item, index) => (
-              <Workexperience key={index} {...item} />
-            ))}
-          </div>
-        </div>
+        <Workexperience />
       </section>
     </>
   );
