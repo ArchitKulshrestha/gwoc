@@ -1,7 +1,10 @@
+"use client";
 import { educator } from "@/public/assets";
 import Image from "next/image";
 import Link from "next/link";
-
+import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "@/utils/motion";
+import { SectionWrapper } from "@/hoc";
 const Hero = () => {
   return (
     <>
@@ -9,8 +12,10 @@ const Hero = () => {
         id="Home"
         className="mt-[70px]   min-h-screen px-6 lg:px-28 py-8 flex justify-center  w-full">
         <div className="flex md:flex-row flex-col gap-x-12 gap-y-16  mt-4 md:mt-12">
-          <div className="md:w-1/2 w-full">
-            <div>
+          <motion.div
+            variants={fadeIn("right", "tween", 0.2, 0.4)}
+            className="md:w-1/2 w-full">
+            <motion.div variants={textVariant(0.2)}>
               <h1 className="md:text-6xl text-4xl font-bold text-text-800 my-1">
                 Tarang Bombale
               </h1>
@@ -18,7 +23,7 @@ const Hero = () => {
                 Dedicated private tutor for IIT JEE Mains and Advanced students
                 in Surat
               </p>
-            </div>
+            </motion.div>
             <div>
               <Link href="#Demo">
                 <button className="mt-6 bg-primary-600 hover:bg-primary-700 text-text-50 px-8 py-3 rounded-md">
@@ -26,16 +31,19 @@ const Hero = () => {
                 </button>
               </Link>
             </div>
-          </div>
-          <div className="md:w-1/2 w-full ">
+          </motion.div>
+
+          <motion.div
+            className="md:w-1/2 w-full "
+            variants={fadeIn("left", "tween", 0.2, 0.4)}>
             <div className="relative w-full h-[200px] md:h-[500px] lg:h-[600px]">
               <Image src={educator} fill alt="Educator" priority />
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
   );
 };
 
-export default Hero;
+export default SectionWrapper(Hero);

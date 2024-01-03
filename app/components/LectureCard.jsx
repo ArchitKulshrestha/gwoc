@@ -1,7 +1,8 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 
-export const LectureCard = ({ imageUrl, title, description, link, index }) => {
+export const LectureCard = ({ imageUrl, title, description, link }) => {
   return (
     <div className="flex flex-col items-center justify-start w-full h-full p-4 hover:scale-105 transition-all">
       <div className=" flex items-center justify-center w-20 h-20 sm:w-24 overflow-hidden sm:h-24 mb-4 rounded-full bg-gradient-to-br from-[#9f9aff] to-[#39d1bd]">

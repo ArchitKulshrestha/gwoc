@@ -3,9 +3,9 @@ import Image from "next/image";
 import { NotesCard } from "./NotesCard";
 import { LectureCard } from "./LectureCard";
 import { getLectures, getNotes } from "@/sanity/utilsSanity";
-
+import { SectionWrapper } from "@/hoc";
 export const dynamic = "force-dynamic";
-export const revalidate = 120;
+export const revalidate = 300;
 
 const Demo = async () => {
   const Lectures = await getLectures();
