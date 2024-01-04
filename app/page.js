@@ -2,7 +2,7 @@ import Image from "next/image";
 import {
   Hero,
   About,
-  Contact,
+  Updates,
   Achievements,
   Demo,
   Skills,
@@ -20,7 +20,7 @@ export default function Home() {
       <Achievements />
       <Demo />
       <Testimonials />
-      <Contact />
+      <Updates />
       <Footer />
     </>
   );

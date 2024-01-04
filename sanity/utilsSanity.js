@@ -48,3 +48,26 @@ export async function getExperience() {
     cache: "no-store",
   });
 }
+
+const NotificationsQuery = groq`
+*[_type == "notifications"] {
+  description
+}`;
+
+export async function getNotifications() {
+  return client.fetch(NotificationsQuery, {
+    cache: "no-store",
+  });
+}
+
+const SkillsQuery = groq`
+*[_type == "skills"] {
+  description,
+  title,
+}`;
+
+export async function getSkills() {
+  return client.fetch(SkillsQuery, {
+    cache: "no-store",
+  });
+}

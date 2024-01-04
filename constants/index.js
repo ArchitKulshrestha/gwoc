@@ -31,7 +31,7 @@ export const NavLinks = [
   },
 
   {
-    title: "Contact",
+    title: "Updates",
   },
 ];
 
@@ -111,16 +111,27 @@ export const Achievements = [
 //     link: "https://drive.google.com/file/d/1IaYEoUeP-B4PHEq5IKom7e_OYwBg-R7j/view?usp=drive_link",
 //   },
 // ];
-export const Experience = [
-  {
-    imageUrl: experiencePhysics,
-    description: "Online Physics Tutor",
-    duration: "Sep'22 - Present",
-  },
+// export const Experience = [
+//   {
+//     imageUrl: experiencePhysics,
+//     description: "Online Physics Tutor",
+//     duration: "Sep'22 - Present",
+//   },
 
+//   {
+//     imageUrl: experience,
+//     description: "IIT Gurukul , Surat",
+//     duration: "Nov'20 - May'23",
+//   },
+// ];
+export const notifications = [
   {
-    imageUrl: experience,
-    description: "IIT Gurukul , Surat",
-    duration: "Nov'20 - May'23",
+    description: "Lorem ipsum dolor sit amet.",
+  },
+  {
+    description: "Lorem ipsum dolor sit amet.",
+  },
+  {
+    description: "Lorem ipsum dolor sit amet.",
   },
 ];

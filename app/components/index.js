@@ -2,7 +2,7 @@ import Footer from "./Footer";
 
 import Hero from "./Hero";
 import About from "./About";
-import Contact from "./Contact";
+import Updates from "./Updates";
 import Achievements from "./Achievements";
 import Demo from "./Demo";
 import Skills from "./Skills";
@@ -12,7 +12,7 @@ export {
   Footer,
   Hero,
   About,
-  Contact,
+  Updates,
   Achievements,
   Demo,
   Skills,
