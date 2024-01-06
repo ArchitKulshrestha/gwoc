@@ -1,8 +1,5 @@
-"use client";
 import { Achievements } from "@/constants";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { use } from "react";
 
 export const AchievementCard = ({ description, icon, index }) => {
   return (

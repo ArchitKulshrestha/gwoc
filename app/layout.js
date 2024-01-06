@@ -10,7 +10,8 @@ export const metadata = {
   },
 };
 
-export const revalidate = 3600;
+export const revalidate = 180;
+export const dynamic = "force-dynamic";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

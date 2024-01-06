@@ -1,6 +1,7 @@
 import { createClient, groq } from "next-sanity";
 
-export const revalidate = 3600;
+export const revalidate = 180;
+export const dynamic = "force-dynamic";
 
 const client = createClient({
   projectId: "hu7026f3",
@@ -17,7 +18,7 @@ const LectureQuery = groq` *[_type == "DemoLecture"] {
 
 export async function getLectures() {
   return client.fetch(LectureQuery, {
-    cache: "no-store",
+    cache: "no-cache",
   });
 }
 
@@ -68,6 +69,6 @@ const SkillsQuery = groq`
 
 export async function getSkills() {
   return client.fetch(SkillsQuery, {
-    cache: "no-store",
+    cache: "no-cache",
   });
 }

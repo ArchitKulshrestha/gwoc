@@ -2,7 +2,7 @@ import { getSkills } from "@/sanity/utilsSanity";
 
 const SkillCard = ({ title, description }) => {
   return (
-    <div className="bg-background-200/80 p-6 rounded-md shadow-md hover:scale-[1.02] transition-all duration-300">
+    <div className="  p-6 rounded-md shadow-md hover:scale-[1.02] transition-all duration-300">
       <h3 className="text-lg sm:text-xl text-text-800 font-semibold mb-2 sm:mb-4 underline-offset-4 decoration-2 underline">
         {title}
       </h3>
@@ -18,7 +18,7 @@ const Skills = async () => {
   return (
     <section className="  px-6 lg:px-28 py-8" id="Skills">
       <h1 className="md:text-4xl text-2xl font-bold text-text-800 py-2 ">
-        Skills.
+        Skills
       </h1>
       <div className="mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -53,9 +53,7 @@ const Updates = () => {
               className="px-3 sm:w-[75%]  w-[99%] "
               onSubmit={handleSubmit(onSubmit)}>
               <div className="flex flex-col gap-6">
-                <h1 className="text-text-800 text-2xl font-bold">
-                  Contact Me.
-                </h1>
+                <h1 className="text-text-800 text-2xl font-bold">Contact Me</h1>
                 <input
                   className="border border-text-200 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-600"
                   type="text"

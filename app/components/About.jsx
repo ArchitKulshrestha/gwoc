@@ -1,22 +1,18 @@
-import React from "react";
 import { Experience } from "@/constants";
-// import { Workexperience } from "./Workexperience";
+
 import { about } from "@/public/assets";
 import Image from "next/image";
 import Workexperience from "./Workexperience";
 import Link from "next/link";
-// import { motion } from "framer-motion";
-// import { SectionWrapper } from "@/hoc";
-// import { fadeIn, textVariant } from "@/utils/motion";
 
 const About = () => {
   return (
     <>
-      <section id="About" className="px-6 lg:px-28 min-h-screen  py-4 sm:py-6">
-        <div className=" flex flex-col md:flex-row gap-x-8 gap-y-12">
+      <section id="About" className="px-6 lg:px-28 min-h-screen  py-1 sm:py-4">
+        <div className=" flex  flex-col md:flex-row gap-x-8 gap-y-16">
           <div className=" w-full md:w-1/2">
-            <h1 className="md:text-4xl text-2xl font-bold text-text-800 pb-2 py-2 sm:py-8">
-              About.
+            <h1 className="md:text-4xl text-2xl font-bold text-text-800 pb-2 py-2 sm:py-4">
+              About
             </h1>
             <p className="text-text-600 md:text-xl text-base my-2 mb-8">
               I am a dedicated private tutor for IIT JEE Mains and Advanced

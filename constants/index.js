@@ -135,3 +135,20 @@ export const notifications = [
     description: "Lorem ipsum dolor sit amet.",
   },
 ];
+export const Testimonialsdata = [
+  {
+    Name: "Name1",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ut illo omnis recusandae. Eveniet deleniti nam voluptas, quasi illum, nemo quibusdam mollitia molestiae ullam quam qui! Quam, laboriosam? Odio, voluptas?",
+  },
+  {
+    Name: "Name2",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ut illo omnis recusandae. Eveniet deleniti nam voluptas, quasi illum, nemo quibusdam mollitia molestiae ullam quam qui! Quam, laboriosam? Odio, voluptas?",
+  },
+  {
+    Name: "Name3",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ut illo omnis recusandae. Eveniet deleniti nam voluptas, quasi illum, nemo quibusdam mollitia molestiae ullam quam qui! Quam, laboriosam? Odio, voluptas?",
+  },
+];

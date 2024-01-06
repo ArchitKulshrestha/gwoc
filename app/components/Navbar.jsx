@@ -42,7 +42,7 @@ const Navbar = () => {
         {showMenu ? <IoMdClose /> : <HiMenuAlt1 />}
       </div>
       {showMenu && (
-        <div className="absolute top-[70px] left-0 w-full backdrop-blur-[6px]  bg-background-100/80  flex flex-col h-screen p-5 items-center md:hidden z-50">
+        <div className="absolute top-[70px] left-0 w-full backdrop-blur-[6px]  bg-background-100  flex flex-col h-screen p-5 items-center md:hidden z-50">
           <ul className="flex flex-col gap-8 items-center">
             {NavLinks.map((link) => (
               <li

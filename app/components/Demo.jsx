@@ -3,7 +3,6 @@ import Image from "next/image";
 import { NotesCard } from "./NotesCard";
 import { LectureCard } from "./LectureCard";
 import { getLectures, getNotes } from "@/sanity/utilsSanity";
-import { SectionWrapper } from "@/hoc";
 
 const Demo = async () => {
   const Lectures = await getLectures();
@@ -14,13 +13,13 @@ const Demo = async () => {
       className="px-6 lg:px-28 min-h-screen flex justify-center items-center py-8">
       <div className="w-full">
         <h1 className="md:text-4xl text-2xl font-bold text-text-800 mt-8 ">
-          Demo.
+          Demo
         </h1>
         <div className=" py-4 md:py-6">
           <h2 className="text-text-600 text-xl sm:text-2xl font-semibold">
             Lectures
           </h2>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
             {Lectures.map((lecture, index) => (
               <LectureCard key={index} index={index} {...lecture} />
             ))}
@@ -30,7 +29,7 @@ const Demo = async () => {
           <h2 className="text-text-600 text-xl sm:text-2xl font-semibold">
             Notes
           </h2>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 py-4 md:py-8">
             {Notes.map((Note, index) => (
               <NotesCard key={index} index={index} {...Note} />
             ))}

@@ -1,4 +1,3 @@
-// import { notifications } from "@/constants";
 import { getNotifications } from "@/sanity/utilsSanity";
 
 const Notifications = async () => {
