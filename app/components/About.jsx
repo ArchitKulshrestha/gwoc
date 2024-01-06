@@ -1,8 +1,7 @@
 import { Experience } from "@/constants";
-
 import { about } from "@/public/assets";
 import Image from "next/image";
-import Workexperience from "./Workexperience";
+import { Workexperience } from "./Workexperience";
 import Link from "next/link";
 
 const About = () => {

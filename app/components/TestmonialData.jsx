@@ -15,7 +15,7 @@ const Testimonialcard = ({ name, description }) => {
   );
 };
 
-const TestmonialData = async () => {
+export const TestmonialData = async () => {
   const Testimonialsdata = await getTestimonials();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
@@ -25,5 +25,3 @@ const TestmonialData = async () => {
     </div>
   );
 };
-
-export default TestmonialData;

@@ -1,6 +1,6 @@
 import { getNotifications } from "@/sanity/utilsSanity";
 
-const Notifications = async () => {
+export const Notifications = async () => {
   const notifications = await getNotifications();
 
   return (
@@ -22,5 +22,3 @@ const Notifications = async () => {
     </div>
   );
 };
-
-export default Notifications;

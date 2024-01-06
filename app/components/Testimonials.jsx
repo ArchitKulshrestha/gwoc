@@ -1,9 +1,5 @@
-"use client";
-import React from "react";
-import { useState } from "react";
-import { useForm, Controller } from "react-hook-form";
-import emailjs from "@emailjs/browser";
-import TestmonialData from "./TestmonialData";
+import { TestmonialData } from "./TestmonialData";
+import TestimonialForm from "./TestimonialForm";
 
 const Testimonialcard = ({ name, description }) => {
   return (
@@ -21,25 +17,6 @@ const Testimonialcard = ({ name, description }) => {
 };
 
 const Testimonials = () => {
-  const [loading, setLoading] = useState(false);
-
-  const { register, handleSubmit, reset, control } = useForm();
-  const onSubmit = (data) => {
-    setLoading(true);
-    emailjs
-      .send("service_6p2qorf", "template_xpmjy7j", data, "hfiF5fVej3ITkNuKZ")
-      .then(() => {
-        alert("Message sent successfully");
-        setLoading(false);
-
-        reset();
-      })
-      .catch(() => {
-        alert("Message failed to send");
-        setLoading(false);
-      });
-  };
-
   return (
     <>
       <section
@@ -50,55 +27,7 @@ const Testimonials = () => {
         </h1>
 
         <TestmonialData />
-
-        <div className="bg-background-200/80 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl flex justify-center items-center mt-16 px-4 sm:px-16 h-[23rem]  sm:w-[50%]  w-[99%]">
-          {" "}
-          <form onSubmit={handleSubmit(onSubmit)} className="  my-4 w-full">
-            <h1 className="text-text-800 text-2xl font-bold py-4">
-              Your Testimonial
-            </h1>
-            <div className="mb-6">
-              <Controller
-                name="name"
-                control={control}
-                defaultValue=""
-                render={({ field }) => (
-                  <input
-                    {...field}
-                    type="text"
-                    id="name"
-                    className="p-2 border rounded w-full focus:outline-none focus:border-blue-500"
-                    placeholder="Enter your name"
-                  />
-                )}
-              />
-            </div>
-
-            <div className="mb-6">
-              <Controller
-                name="description"
-                control={control}
-                defaultValue=""
-                render={({ field }) => (
-                  <textarea
-                    {...field}
-                    id="description"
-                    className="p-2 border rounded w-full focus:outline-none focus:border-blue-500"
-                    placeholder="Enter your testimonial"
-                  />
-                )}
-              />
-            </div>
-
-            <div className="mb-6">
-              <button
-                type="submit"
-                className="bg-primary-600 hover:bg-primary-700 text-text-50 px-8 py-3 rounded-md">
-                {loading ? "Sending..." : "Send"}
-              </button>
-            </div>
-          </form>
-        </div>
+        <TestimonialForm />
       </section>
     </>
   );

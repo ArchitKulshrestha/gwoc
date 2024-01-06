@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { NavLinks } from "@/constants";
-
+import React from "react";
 import Link from "next/link";
 
 import { HiMenuAlt1 } from "react-icons/hi";
@@ -36,11 +36,11 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div
+      <button
         className="flex md:hidden text-text-700 text-2xl cursor-pointer"
-        onClick={() => setShowMenu((prev) => !prev)}>
+        onClick={() => setShowMenu(!showMenu)}>
         {showMenu ? <IoMdClose /> : <HiMenuAlt1 />}
-      </div>
+      </button>
       {showMenu && (
         <div className="absolute top-[70px] left-0 w-full backdrop-blur-[6px]  bg-background-100  flex flex-col h-screen p-5 items-center md:hidden z-50">
           <ul className="flex flex-col gap-8 items-center">
