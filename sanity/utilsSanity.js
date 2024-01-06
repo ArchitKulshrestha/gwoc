@@ -72,3 +72,15 @@ export async function getSkills() {
     cache: "no-cache",
   });
 }
+
+const TestimonialsQuery = groq`
+*[_type == "testimonials"] {
+  description,
+  name,
+}`;
+
+export async function getTestimonials() {
+  return client.fetch(TestimonialsQuery, {
+    cache: "no-cache",
+  });
+}

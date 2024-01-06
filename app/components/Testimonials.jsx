@@ -3,15 +3,14 @@ import React from "react";
 import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import TestmonialData from "./TestmonialData";
 
-import { Testimonialsdata } from "@/constants";
-
-const Testimonialcard = ({ Name, description }) => {
+const Testimonialcard = ({ name, description }) => {
   return (
     <>
       <div className="  p-6 rounded-md shadow-md hover:scale-[1.02] transition-all duration-300">
         <h3 className="text-lg sm:text-xl text-text-800 font-semibold mb-2 sm:mb-4 underline-offset-4 decoration-2 underline">
-          {Name}
+          {name}
         </h3>
         <p className=" text-sm sm:text-base font-normal  text-text-600">
           {description}
@@ -46,16 +45,13 @@ const Testimonials = () => {
       <section
         id="Testimonials"
         className="min-h-screen px-6 lg:px-28 py-8  w-full">
-        <h1 className="md:text-4xl text-2xl font-bold text-text-800 py-2">
+        <h1 className="md:text-4xl text-2xl font-bold text-text-800 py-4">
           Testimonials
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
-          {Testimonialsdata.map((item, index) => {
-            return <Testimonialcard key={index} {...item} />;
-          })}
-        </div>
-        <div className="bg-background-200/80 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl flex justify-center items-center mt-12 px-4 sm:px-16 h-[23rem]  sm:w-[50%]  w-[99%]">
+        <TestmonialData />
+
+        <div className="bg-background-200/80 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl flex justify-center items-center mt-16 px-4 sm:px-16 h-[23rem]  sm:w-[50%]  w-[99%]">
           {" "}
           <form onSubmit={handleSubmit(onSubmit)} className="  my-4 w-full">
             <h1 className="text-text-800 text-2xl font-bold py-4">
