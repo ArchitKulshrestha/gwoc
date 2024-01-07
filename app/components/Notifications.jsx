@@ -13,7 +13,7 @@ export const Notifications = async () => {
           {notifications.map((notification, index) => (
             <li
               key={index}
-              className="mt-2 text-base sm:text-lg font-normal  text-secondary-600 ">
+              className="mt-2 text-base sm:text-lg font-normal  text-accent-600 ">
               {notification.description}
             </li>
           ))}

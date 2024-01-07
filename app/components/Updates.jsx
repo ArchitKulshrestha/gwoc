@@ -20,7 +20,7 @@ const Updates = () => {
 
           <Link
             className="hover:text-text-400 md:text-lg text-base text-text-600 "
-            href="tel:+91-6398287452"
+            href="tel:+91-0123456789"
             target="_blank">
             Phone- 6398287452
           </Link>
