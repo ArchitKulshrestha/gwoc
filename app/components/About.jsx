@@ -28,7 +28,7 @@ const About = () => {
           </div>
           <div className="w-full md:w-1/2 ">
             <Image
-              className=" md:ml-16 sm:h-[300px] h-[200px]"
+              className=" md:ml-16 sm:h-[300px] h-[200px] drop-shadow"
               src={about}
               alt="Educator"
             />

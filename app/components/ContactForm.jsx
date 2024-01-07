@@ -25,7 +25,7 @@ const ContactForm = () => {
       });
   };
   return (
-    <div className="bg-background-200/80 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl h-[26rem]  flex items-center justify-center sm:w-[75%]  w-[99%]">
+    <div className="bg-gradient-to-tl from-[#dfd8f3] to-[#c0b2e6]/80 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl h-[26rem]  flex items-center justify-center sm:w-[75%]  w-[99%]">
       <form
         className="px-3 sm:w-[75%]  w-[99%] "
         onSubmit={handleSubmit(onSubmit)}>

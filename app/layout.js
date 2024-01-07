@@ -17,9 +17,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         suppressHydrationWarning={true}
-        className={`  bg-background-50 text-text-700`}>
+        className={`  bg-gradient-to-l from-[#efecf9] to-[#e6f3fe] text-text-700`}>
         <main className="relative overflow-hidden ">{children}</main>
       </body>
     </html>
   );
 }
+// linear-gradient(90deg, #d1e6fa 0%, #dde6ee 100%)
+// bg-gradient-to-r from-[#d1e6fa] to-[#dde6ee]

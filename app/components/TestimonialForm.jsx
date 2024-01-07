@@ -25,7 +25,7 @@ const TestimonialForm = () => {
       });
   };
   return (
-    <div className="bg-background-200/80 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl flex justify-center items-center mt-16 px-4 sm:px-16 h-[23rem]  sm:w-[40%]  w-[99%]">
+    <div className="bg-gradient-to-br from-[#dfd8f3] to-[#c0b2e6]/90 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl flex justify-center items-center mt-16 px-4 sm:px-16 h-[23rem]  sm:w-[40%]  w-[99%]">
       {" "}
       <form onSubmit={handleSubmit(onSubmit)} className="  my-4 w-full">
         <h1 className="text-text-800 text-2xl font-bold py-4 mb-2">

@@ -12,7 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
 
   return (
-    <nav className="fixed px-6 lg:px-28 z-50 backdrop-blur-[8px]  bg-background-100/60 w-full h-[70px] flex justify-between items-center shadow-md">
+    <nav className="fixed px-6 lg:px-28 z-50 backdrop-blur-[8px]  bg-accent-100/40 w-full h-[70px] flex justify-between items-center shadow-md">
       <Link href={"/"} className="text-text-700 text-xl font-bold uppercase ">
         <p className="hover:scale-105 transition-all duration-[300ms]">
           Tarang &nbsp;
@@ -42,7 +42,7 @@ const Navbar = () => {
         {showMenu ? <IoMdClose /> : <HiMenuAlt1 />}
       </button>
       {showMenu && (
-        <div className="absolute top-[70px] left-0 w-full backdrop-blur-[6px]  bg-background-100  flex flex-col h-screen p-5 items-center md:hidden z-50">
+        <div className="absolute top-[70px] left-0 w-full   bg-gradient-to-r from-[#efecf9] to-[#e6f3fe]  flex flex-col h-screen p-5 items-center md:hidden z-50">
           <ul className="flex flex-col gap-8 items-center">
             {NavLinks.map((link) => (
               <li

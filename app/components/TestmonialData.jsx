@@ -3,7 +3,7 @@ import { getTestimonials } from "@/sanity/utilsSanity";
 const Testimonialcard = ({ name, description }) => {
   return (
     <>
-      <div className="  p-6 rounded-md shadow-md hover:scale-[1.02] transition-all duration-300">
+      <div className="  p-6  rounded-xl shadow   hover:scale-[1.02] transition-all duration-300 bg-gradient-to-br from-[#cde8fe]/50 to-[#9bd1fd]/40">
         <h3 className="text-lg sm:text-xl text-text-800 font-semibold mb-2 sm:mb-4 underline-offset-4 decoration-2 underline">
           {name}
         </h3>
