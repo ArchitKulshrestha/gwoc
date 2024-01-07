@@ -4,7 +4,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
-
+import { motion } from "framer-motion";
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
 
@@ -25,7 +25,7 @@ const ContactForm = () => {
       });
   };
   return (
-    <div className="bg-gradient-to-tl from-[#dfd8f3] to-[#c0b2e6]/80 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl h-[26rem]  flex items-center justify-center sm:w-[75%]  w-[99%]">
+    <div className="bg-gradient-to-l from-[#cde8fe]/40 to-[#9bd1fd]/50 z-30 backdrop-blur-[8px] hover:scale-[1.01] transition-all duration-300 ease-in-out  shadow-md rounded-xl h-[26rem]  flex items-center justify-center sm:w-[75%]  w-[99%]">
       <form
         className="px-3 sm:w-[75%]  w-[99%] "
         onSubmit={handleSubmit(onSubmit)}>
