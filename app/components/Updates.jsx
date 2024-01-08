@@ -14,15 +14,15 @@ const Updates = () => {
           <Link
             target="_blank"
             className="hover:text-text-400 text-text-600 md:text-lg text-base"
-            href="mailto:www.gamil.com">
+            href="mailto:tarangbombale01@gmail.com">
             Email- www.gamil.com
           </Link>
 
           <Link
             className="hover:text-text-400 md:text-lg text-base text-text-600 "
-            href="tel:+91-0123456789"
+            href="tel:+91-766663804"
             target="_blank">
-            Phone- 6398287452
+            Phone- 766663804
           </Link>
         </div>
         <div className="md:w-1/2 w-full">

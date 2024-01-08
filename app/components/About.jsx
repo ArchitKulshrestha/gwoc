@@ -1,10 +1,14 @@
 import { Experience } from "@/constants";
-import { about } from "@/public/assets";
+import { aboutImage } from "@/public/assets";
 import Image from "next/image";
 import { Workexperience } from "./Workexperience";
 import Link from "next/link";
+import { getAbout } from "@/sanity/utilsSanity";
 
-const About = () => {
+const About = async () => {
+  const about = await getAbout();
+  const abouts = about[0].about;
+
   return (
     <>
       <section id="About" className="px-6 lg:px-28 min-h-screen  py-1 sm:py-4">
@@ -14,10 +18,7 @@ const About = () => {
               About
             </h1>
             <p className="text-text-600 md:text-xl text-base my-2 mb-8">
-              I am a dedicated private tutor for IIT JEE Mains and Advanced
-              students in Surat. I have been teaching for the past 3 years and
-              have helped many students achieve their goals. I am pursuing my
-              degree in M.Sc Mathematics from NIT Surat.
+              {abouts}
             </p>
             <Link
               className="text-text-50 bg-primary-600 py-3 px-6 rounded-md hover:bg-primary-700"
@@ -29,7 +30,7 @@ const About = () => {
           <div className="w-full md:w-1/2 ">
             <Image
               className=" md:ml-16 sm:h-[300px] h-[200px] drop-shadow"
-              src={about}
+              src={aboutImage}
               alt="Educator"
             />
           </div>

@@ -17,7 +17,7 @@ const Navbar = () => {
       className="fixed px-6 lg:px-28 z-50 backdrop-blur-[8px]  bg-accent-100/40 w-full h-[70px] flex justify-between items-center shadow-md"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.2 }}>
+      transition={{ duration: 0.4 }}>
       <Link href={"/"} className="text-text-700 text-xl font-bold uppercase ">
         <p className="hover:scale-105 transition-all duration-[300ms]">
           Tarang &nbsp;

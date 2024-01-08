@@ -1,7 +1,10 @@
 import { AchievementCard } from "./AchievementCard";
-import { Achievements } from "@/constants";
+// import { Achievements } from "@/constants";
+import { getAchievements } from "@/sanity/utilsSanity";
 
-const Achievement = () => {
+const Achievement = async () => {
+  const Achievements = await getAchievements();
+
   return (
     <section
       className="px-6 lg:px-28 min-h-screen flex justify-center items-center py-8"

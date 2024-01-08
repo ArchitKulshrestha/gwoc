@@ -58,7 +58,7 @@ export const Achievements = [
   },
   {
     icon: testTube,
-    description: " High Distinction in Australian Chemistry Quiz 2015.",
+    description: "High Distinction in Australian Chemistry Quiz 2015.",
   },
   {
     icon: medalbadge,

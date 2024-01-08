@@ -84,3 +84,27 @@ export async function getTestimonials() {
     cache: "no-cache",
   });
 }
+
+const AboutQuery = groq`
+*[_type == "about"] {
+  about,
+}`;
+
+export async function getAbout() {
+  return client.fetch(AboutQuery, {
+    cache: "no-cache",
+  });
+}
+
+const AchievementsQuery = groq`
+*[_type == "achievement"] {
+  description,
+    "imageUrl": image.asset->url,
+ 
+ }`;
+
+export async function getAchievements() {
+  return client.fetch(AchievementsQuery, {
+    cache: "no-cache",
+  });
+}
