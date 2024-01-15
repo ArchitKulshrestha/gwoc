@@ -41,7 +41,8 @@ Install my-project with npm
   npm install my-project
   cd my-project
 ```
-    
+
+ visit /admin to manage the data  
 ## Feedback
 
 If you have any feedback, please reach out to us at archit499kul@gmail.com
